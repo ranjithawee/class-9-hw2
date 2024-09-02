@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>class-8</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+		<div class="row1">
+			<div class="content c1">
+				<h5>Selects all elements with class="className"</h5>
+				<hr>
+				<div class="class1">
+					<p>1. Lorem ipsum dolor sit amet.</p>
+					<div>
+						<p>2. Lorem, ipsum.</p>
+					</div>
+					<p> 3. this class selector</p>
+				</div>
+			</div>
+			<div class="content c2">
+				<h5>Selects the element with id="idname"</h5><hr>
+				<div id="id1">
+					<p>this is id</p>
+					<div>
+						<p>1. Stet diam dolor justo et sed vero sit sanctus, dolor.</p>
+					</div>
+					<p>2. Sea rebum consetetur voluptua ipsum.</p>
+				</div>
+			</div>
+			<div class="content c3">
+				<h5>Selects all p elements</h5> <hr>
+				<div class="selectallp">
+					<p>p1. Dolor sit amet consetetur amet amet sed.</p>
+					<p>p2. Rebum voluptua sanctus sadipscing vero ut nonumy dolor accusam. Takimata vero dolor stet kasd, sed takimata gubergren clita clita, sit.</p>
+				</div>
+			</div>
+			<div class="content c4">
+				<h5>div > p: Selects all div elements and all p elements</h5><hr>
+				<p>1. Lorem et vero dolor ut.</p>
+				<div>
+					<p>2. Sanctus sed ipsum eos et sit at stet. Est sit eirmod magna et, eos kasd amet at rebum, sea dolor amet stet sadipscing diam voluptua.</p>
+				</div>
+			</div>
+			<div class="content c5">
+				<h5> div p: Selects all p elements inside div elements</h5><hr>
+				<div class="content5">
+					<p>1. Erat ipsum.</p>
+					<p>2. Et dolore sed diam sit justo accusam sit lorem sanctus et. Amet ipsum ipsum tempor tempor. Diam dolor diam duo at vero voluptua et justo sea. Duo sed accusam eos.</p>
+				</div>
+			</div>
+		</div>
+		<!--------- 2nd row -------->
+			<div class="content c1">
+				<h5>div > p: Selects all p elements where the parent is a div element</h5>
+				<hr>
+				<div class="class2">
+					<p>1. Lorem ipsum dolor sit amet.</p>
+					<div>
+						<p>2. Lorem, ipsum.</p>
+					</div>
+					<p> 3. this class selector</p>
+				</div>
+			</div>
+			<div class="content c2">
+				<h5>div + p: Selects the first p element that is placed immediately after div elements</h5><hr>
+				<div class="class7">
+					<p>this is div + p</p>
+					<div>
+						<p>1. Stet diam dolor justo et sed vero sit sanctus, dolor.</p>
+					</div>
+					<p>2. Sea rebum consetetur voluptua ipsum.</p>
+					<p>3. Sea rebum consetetur voluptua ipsum.</p>
+					<p>4. Sea rebum consetetur voluptua ipsum.</p>
+				</div>
+			</div>
+			<div class="content c3">
+				<h5>p ~ ol: Selects every ol element that is preceded by a p element</h5> <hr>
+				<div class="w1">
+					<h6>a div element</h6>
+					<ol>
+						<li>orange</li>
+					</ol>
+					<p>this is para</p>
+					<ol>
+						<li>apple</li>
+						<li>banana</li>
+					</ol>
+					<h6>this is another para</h6>
+					<ol>
+						<li>apple</li>
+					
+					</ol>
+				</div>
+			</div>
+			<div class="content c4">
+				<h5>[atribute] Selects all elements with a target attribute</h5><hr>
+				<p>this is a pragraph</p>
+				<a href="https://www.google.com">google</a> <br>
+				<a href="https://www.google.com" target="_blank">google1</a> <br>
+				<a href="https://www.google.com" target="_blank">google2</a> <br>
+			</div>
+			<div class="content c5">
+				<h5> Selects all elements with a title attribute containing the word</h5><hr>
+
+				<div class="flower">
+				<img src="images/klematis.jpg" title="f1 f2" width="32%">
+				<img src="images/img_flwr.gif" title="f2" width="32%">
+				<img src="images/landscape.jpg" title="f3" width="32%">
+				</div>
+				
+			</div>
+		</div>
+		<!--------- 3nd row -------->
+			<div class="content c1">
+				<h5>div[class^="value"]&[class^="value"] Selects every a element whose href attribute value begins with "https"</h5><hr>
+				<div class="first_test">The first div element</div>
+				<div class="second">The first div element</div>
+				<div class="test">The first div element</div>
+				<div class="test_help">The first div element</div>
+				<p class="test">this is a paragraph</p>
+				<p class="test_ex">this is a paragraph</p>
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c2">
+				<h5>div[class$="value"] Set a background color on all div elements that have a class attribute value that ends with "test":</h5><hr>
+				<div class="first_test">No nonumy dolor diam tempor.</div>
+				<div class="second">No nonumy dolor diam tempor.</div>
+				<div class="test">No nonumy dolor diam tempor.</div>
+				<p class="test">Ea rebum erat kasd et.</p>
+				<p class="test_ex">Ea rebum erat kasd et.</p>
+			</div>
+
+			<!-- ----------------------------------------------------------- -->
+			<div class="content c3">
+				<h5>div[class^="value"] & div[class$="value"] & div[class*="value"] </h5> <hr>
+
+				<p>work same</p>
+			</div>
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c4">
+				<h5> a:active :: Selects the active link</h5><hr>
+				<a href="https://www.facebook.com/ranjit.hawee/">facebook</a>
+				<p><strong>Note:</strong> The :active selector styles the active link.</p>
+				<div class="active_1">
+					<p>Active</p>
+				</div>
+			</div>
+			<!-- ------------------------------------------------- -->
+			<div class="content c5">
+				<h5>::after __Insert something after the content of each p element</h5><hr>
+				<p class="d">Bangladesh</p>
+				
+			</div>
+		</div>
+		<!--------- 4nd row -------->
+			<div class="content c1">
+				<h5>::before __Insert something before the content of each p element</h5><hr>
+
+				<p class="pbefore">
+					Bangladesh
+				</p>
+			</div>
+			<!-- ------------------------------------------------- -->
+			<div class="content c2">
+				<h5> input:checked __Selects every checked input element</h5><hr>
+				<form action="#">
+					<input class="input" type="radio" name="gender"><span>Male</span>
+					<input class="input" type="radio" name="gender"><span>Female</span><br>
+					<input class="input" type="checkbox" name="gender"><span>Check1</span>
+					<input class="input" type="checkbox" name="gender"><span>Check2</span>
+				</form>
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c3">
+				<h5>input:default __Selects the default input elemen</h5> <hr>
+
+				<form action="#">
+				<input class="apple" type="radio">Male <br>
+				<input class="apple" type="radio">Female <br>
+				<input class="apple" type="radio">Others
+				</form>
+			</div>
+
+
+			<div class="content c4">
+				<h5>Selects every disabled input element</h5><hr>
+				<form action="#">
+					name:<input class="input_dis" type="text"> <br>
+					email:<input class="input_dis" type="email"> <br>
+					phone:<input class="input_dis" type="tel" disabled> 
+				</form>
+				<h1>disabled input</h1>
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c5">
+				<h5>CSS :first-of-type Selector</h5><hr>
+				<aside>Lorem ipsum dolor sit amet.</aside>
+				<aside>Lorem ipsum dolor sit amet.</aside>
+				<aside>Lorem ipsum dolor sit amet.</aside>
+				<aside>Lorem ipsum dolor sit amet.</aside>
+				
+			</div>
+		</div>
+		<!--------- 5nd row -------->
+			<div class="content c1">
+				<h5>CSS :first-of-type Selector</h5><hr>
+				<div class="last-type">Lorem ipsum dolor sit amet.</div>
+				<div class="last-type">Lorem ipsum dolor sit amet.</div>
+				<div class="last-type">Lorem ipsum dolor sit amet.</div>
+				<div class="last-type">Lorem ipsum dolor sit amet.</div>
+				
+			</div>
+			<!-- ------------------------------------------------- -->
+			<div class="content c2">
+				<h5>CSS ::first-line Selector</h5><hr>
+				<p class="first-line">
+					Sed ipsum et erat amet sit eirmod, magna sit et dolor sit magna rebum, justo amet amet diam tempor stet dolores elitr amet, voluptua est et magna stet duo duo, sea dolor magna vero stet r takimata 
+				</p>
+			</div>
+
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c3">
+				<h5>CSS ::first-letter Selector</h5> <hr>
+				<p class="first-letter">Lorem, ipsum dolor.</p>
+				<p class="first-letter">Lorem, ipsum dolor.</p>
+				<p class="first-letter">Lorem, ipsum dolor.</p>
+				<p class="first-letter">Lorem, ipsum dolor.</p>
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c4">
+				<h5>CSS :nth-child() Selector</h5><hr>
+				<p class="nth-child">Amet amet voluptua sed sed.</p>
+				<p class="nth-child">Amet amet voluptua sed sed.</p>
+				<p class="nth-child">Amet amet voluptua sed sed.</p>
+				<ul>
+					<li class="child-li">bangladesh</li>
+					<li class="child-li">bangladesh</li>
+					<li class="child-li">bangladesh</li>
+				</ul>
+
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c5">
+				<h5>CSS :nth-last-child() Selector</h5><hr>
+				<ul>
+					<li class="last_child">Pen</li>
+					<li class="last_child">Mobile</li>
+					<li class="last_child">Tablet</li>
+					<li class="last_child">Computer</li>
+					<li class="last_child">Table</li>
+					<li class="last_child">Chiar</li>
+				</ul>
+				
+			</div>
+		</div>
+		<!--------- 6nd row -------->
+			<div class="content c1">
+				<h5>CSS ::marker Selector</h5><hr>
+				<ol>
+					<li class="marker_1">one</li>
+					<li class="marker_1">two</li>
+					<li class="marker_1">three</li>
+				</ol>
+			</div>
+			<!-- ------------------------------------------------- -->
+			<div class="content c2 confused">
+				<h5>CSS : only-of-type Selector</h5><hr>
+				<p class="only_type_of">Australia</p>
+				<p class="only_type_of">Japan</p>
+				<p class="only_type_of">Nepal</p>
+				<p class="only_type_of">Bhutan</p>
+				<p class="only_type_of">China</p>
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c3">
+				<h5>CSS :only-child Selector</h5> <hr>
+				<div><p class="only_child">1. Diam ipsum amet amet ipsum amet amet sit, nonumy elitr.</p></div>
+				<div>
+					<span>2. Est eos stet duo voluptua.</span>
+					<p class="only_child">3. Tempor stet voluptua dolor sit.</p>
+				</div>
+			</div>
+
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c4">
+				<h5>CSS :out-of-range Selector</h5><hr>
+				<input type="number" min="5" max="10" value="7">
+				<br><br>
+				<p><strong>Note:</strong> Try typing a number within the given range (between 5 and 10), to see the styling disappear.</p>
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c5">
+				<h5>CSS :read-only Selector</h5><hr>
+				<input type="text" value="editable">
+				<input class="readonly" type="text" readonly value="readonly">
+				
+			</div>
+		</div>
+		<!--------- 7nd row -------->
+			<div class="content c1">
+				<h5>CSS ::selection Selector <br>Select some text on this page:</h5><hr>
+				<p class="selection">This is a paragraph</p>
+				<p class="selection">This is a paragraph2</p>
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c2">
+				<h5>CSS :visited Selector</h5><hr>
+				<a href="https://www.google.com" class="visited">Click here</a>
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c3">
+				<h5>CSS :valid Selector</h5> <hr>
+				<input type="email" class="valid" placeholder="email"><br><br>
+				Try typing an illegal e-mail address, to see the styling disappear.
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+			<div class="content c4">
+				<h5>CSS :hover Selector</h5><hr>
+				<button class="btn_hover">Button</button>
+			</div>
+
+			<!-- ------------------------------------------------- -->
+
+
+			<div class="content c5">
+				<h5> CSS :focus Selector</h5><hr>
+				<label>Name</label>
+				<input type="text" class="focus"><br><br>
+				<label>Name</label>
+				<input type="text" class="focus"> <br><br>
+				Click inside the text fields to see a yellow background:
+				
+			</div>
+		</div>
+		<!--------- footer -------->
+
+		</div>
+		<div class="footer">
+			<p class="footer_text">&copy copyright by Ranjit hawee 2024</p>
+		</div>
+
+
+
+</body>
+</html>
